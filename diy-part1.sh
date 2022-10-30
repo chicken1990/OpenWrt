@@ -21,6 +21,6 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 #sed -i '$a src-git kiddin https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 
 #luci-app-vssr 
-cd lede/package/lean/  
-git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
-git clone https://github.com/jerrykuku/luci-app-vssr.git
+ 
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb  #git lua-maxminddb 依赖
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
