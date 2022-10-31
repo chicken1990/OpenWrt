@@ -26,17 +26,17 @@ git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxmin
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
 
 #OpenClash项目
-/*
-mkdir package/luci-app-openclash
-cd package/luci-app-openclash
-git init
-git remote add -f origin https://github.com/vernesong/OpenClash.git
-git config core.sparsecheckout true
-echo "luci-app-openclash" >> .git/info/sparse-checkout
-git pull origin master
-git branch --set-upstream-to=origin/master master
-cd ../..
-*/
+
+#mkdir package/luci-app-openclash
+#cd package/luci-app-openclash
+#git init
+#git remote add -f origin https://github.com/vernesong/OpenClash.git
+#git config core.sparsecheckout true
+#echo "luci-app-openclash" >> .git/info/sparse-checkout
+#git pull origin master
+#git branch --set-upstream-to=origin/master master
+#cd ../..
+
 # 删除自定义源默认的 argon 主题
 rm -rf package/lean/luci-theme-argon
 
