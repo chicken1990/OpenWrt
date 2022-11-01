@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.0.100/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.0.113/g' package/base-files/files/bin/config_generate
 
 # 替换默认主题为 luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
