@@ -14,7 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git jerryk https://github.com/jerrykuku/openwrt-package' >>feeds.conf.default 
 #sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
@@ -23,8 +23,8 @@ echo 'src-git jerryk https://github.com/jerrykuku/openwrt-package' >>feeds.conf.
 
 #luci-app-vssr[Hello World]项目 
  
-git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb  #git lua-maxminddb 依赖
-git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
+#git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb  #git lua-maxminddb 依赖
+#git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
 
 #OpenClash项目
 #库超容量，无法编译
