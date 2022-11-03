@@ -20,7 +20,7 @@ echo 'src-git jerryk https://github.com/jerrykuku/openwrt-package' >>feeds.conf.
 #sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 #sed -i '$a src-git kiddin https://github.com/kiddin9/openwrt-packages' feeds.conf.default
-
+./scripts/feeds clean
 #luci-app-vssr[Hello World]项目 
  
 #git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb  #git lua-maxminddb 依赖
