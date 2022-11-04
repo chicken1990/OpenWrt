@@ -22,6 +22,7 @@ rm -rf package/lean/luci-theme-argon
 
 # 针对 LEDE 项目拉取 argon 原作者的源码
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+
 ## 下载luci-app-argon-config
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/lean/luci-app-argon-config
 
