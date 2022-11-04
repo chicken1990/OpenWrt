@@ -40,7 +40,7 @@ cp -r OpenClash-master/luci-app-openclash package
 rm -rf package/lean/luci-theme-argon
 
 # 部分第三方源自带 argon 主题，上面命令删除不掉的请运行下面命令
-#find ./ -name luci-theme-argon | xargs rm -rf;
+find ./ -name luci-theme-argon | xargs rm -rf;
 
 # 针对 LEDE 项目拉取 argon 原作者的源码
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
