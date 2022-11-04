@@ -10,8 +10,30 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# Modify default IP
-sed -i 's/192.168.1.1/192.168.0.113/g' package/base-files/files/bin/config_generate
+
+#luci-app-vssr[Hello World]项目 
+ 
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb  #git lua-maxminddb 依赖
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
+
+#OpenClash项目
+#库超容量，无法编译
+#mkdir package/luci-app-openclash
+#cd package/luci-app-openclash
+#git init
+#git remote add -f origin https://github.com/vernesong/OpenClash.git
+#git config core.sparsecheckout true
+#echo "luci-app-openclash" >> .git/info/sparse-checkout
+#git pull origin master
+#git branch --set-upstream-to=origin/master master
+#cd ../..
+
+## 下载OpenClash
+wget https://github.com/vernesong/OpenClash/archive/master.zip
+## 解压
+unzip master.zip
+## 复制OpenClash软件包到OpenWrt
+cp -r OpenClash-master/luci-app-openclash package
 
 
 # 删除自定义源默认的 argon 主题
@@ -28,3 +50,6 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git package/lean/lu
 
 # 替换默认主题为 luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
+
+# Modify default IP
+sed -i 's/192.168.1.1/192.168.0.113/g' package/base-files/files/bin/config_generate
