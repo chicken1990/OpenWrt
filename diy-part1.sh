@@ -22,3 +22,11 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 #sed -i '$a src-git kiddin https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 
 
+echo 'config global
+        option anon_swap '0'
+        option anon_mount '0'
+        option auto_swap '1'
+        option auto_mount '1'
+        option delay_root '5'
+        option check_fs '1'' >> package/base-files/files/etc/fstab
+
