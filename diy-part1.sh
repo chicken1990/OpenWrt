@@ -22,6 +22,6 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 #sed -i '$a src-git kiddin https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 
 mkdir -p -m 777 files/etc/config
-echo -e "config global\n        option anon_swap '0'\n        option anon_mount '0'\n        option auto_swap '1'\n        option auto_mount '1'
-        option delay_root '5'\n        option check_fs '1'" > files/etc/config/fstab
+echo -e "config global\n        option anon_mount '0'\n        option auto_swap '1'\n        option auto_mount '1'
+        option delay_root '5'\n        option check_fs '1'\n        option anon_swap '0'\n" > files/etc/config/fstab
 
